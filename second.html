@@ -121,6 +121,31 @@ ol {
         <a class="phone-btn" href="tel:15288423238">立即电话咨询</a>
     </div>
 
+    <div class="card" style="text-align:center;">
+  <h2>微信咨询</h2>
+  <p style="font-size:18px;">微信号：<strong id="wxid">KM15288423238</strong></p>
+
+  <button onclick="copyWeChat()" 
+          style="background:#07c160;color:#fff;
+                 border:none;padding:12px 24px;
+                 font-size:16px;border-radius:5px;">
+    点击复制微信号
+  </button>
+
+  <p style="font-size:14px;color:#666;margin-top:10px;">
+    复制后打开微信添加好友即可咨询
+  </p>
+</div>
+
+<script>
+function copyWeChat() {
+  const text = document.getElementById("wxid").innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert("微信号已复制，请打开微信添加好友");
+  });
+}
+</script>
+    
     <!-- 我们的优势 -->
     <div class="card">
         <h2>我们的优势</h2>
