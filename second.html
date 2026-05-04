@@ -116,7 +116,7 @@ ol {
     </div>
 
    <div class="card" style="text-align:center;">
-  <h2>联系方式</h2>
+  <h2>服务热线</h2>
 
   <p style="font-size:22px;font-weight:bold;margin:15px 0;">
     📞 152‑8842‑3238
@@ -204,22 +204,63 @@ function copyWeChat() {
     </div>
 
 
-       <section style="padding:40px 20px;text-align:center;border-top:1px solid #eee;">
-  <h2 style="font-size:22px;margin-bottom:20px;">立即咨询报废车回收价格</h2>
+      <section style="padding:40px 20px;text-align:center;border-top:1px solid #eee;">
+  <h2 style="font-size:22px;margin-bottom:20px;">
+    立即咨询报废车回收价格
+  </h2>
 
-  <p style="font-size:18px;line-height:2;">
-    📞 电话：15288423238<br>
-    💬 微信：15288423238<br>
-    🕘 服务时间：8:00 – 24:00
+  <!-- 核心号码 -->
+  <p style="font-size:24px;font-weight:bold;margin:10px 0;">
+    📞 152‑8842‑3238
   </p>
 
-  <a href="tel:13800008888"
-     style="display:inline-block;margin-top:20px;padding:14px 28px;
-            background:#e60012;color:#fff;
-            font-size:18px;text-decoration:none;border-radius:4px;">
-     立即咨询报废价格
+  <!-- 说明 -->
+  <p style="font-size:14px;color:#666;line-height:1.6;margin-bottom:25px;">
+    电话可直接拨打<br>
+    微信可搜索或复制该号码添加咨询<br>
+    服务时间：8:00 – 24:00
+  </p>
+
+  <!-- 电话按钮（主） -->
+  <a href="tel:15288423238"
+     style="display:inline-block;
+            padding:14px 30px;
+            background:#e60012;
+            color:#fff;
+            font-size:18px;
+            text-decoration:none;
+            border-radius:4px;
+            margin:8px;">
+     📞 立即电话咨询
   </a>
+
+  <!-- 微信按钮（辅） -->
+  <button onclick="copyWeChat()"
+          style="display:inline-block;
+                 padding:14px 30px;
+                 background:#07c160;
+                 color:#fff;
+                 font-size:18px;
+                 border:none;
+                 border-radius:4px;
+                 margin:8px;
+                 cursor:pointer;">
+     💬 微信咨询
+  </button>
+
+  <p style="font-size:13px;color:#999;margin-top:12px;">
+    点击微信咨询后自动复制号码，在微信中添加即可
+  </p>
 </section>
+
+<script>
+function copyWeChat() {
+  navigator.clipboard.writeText("15288423238").then(function () {
+    alert("号码已复制，可在微信中搜索添加");
+  });
+}
+</script>
+``
 
 
 
